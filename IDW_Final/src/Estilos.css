@@ -1,0 +1,311 @@
+@import url('https://fonts.googleapis.com/css2?family=Overpass:ital,wght@0,100..900;1,100..900&display=swap');
+
+*{
+    margin: 0;
+    font-family: Overpass;
+    box-sizing: border-box;
+}
+
+.contenedorNav {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    background-color: white;
+    max-height: 150px;
+}
+
+.logoNav{
+    max-width: 150px;
+}
+
+h1{
+    font-family: Overpass;
+    font-size: 50px;
+    font-weight: bolder;
+}
+
+.menu{
+    font-family: Overpass;
+    font-size: 30px;
+    text-decoration: none;
+}
+
+.menu:hover{
+    background-color: rgb(235, 165, 74);
+}
+
+.menuDropDown:hover .dropDownMenu {
+    display: block;
+    padding: 0;
+    background-color: rgb(235, 165, 74);
+}
+
+.dropDownMenu {
+    display: none;
+    position: absolute;
+    width: fit-content;
+    margin-top: 1px;
+}
+
+.dropDownMenu li {
+    display: block;
+    padding: 5px;
+}
+
+.dropDownMenu li a {
+    color:white;
+    text-decoration: none;
+}
+
+.dropDownMenu li:hover {
+    background-color: rgb(4, 109, 69);
+}
+
+.imagenMain{
+    width: 100%;
+    margin: 0;
+    border-radius: 25px;
+    border: 5px white solid;
+}
+
+.contenedorMain{
+    font-family: Overpass;
+    display: flex;
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+    border: 10px white solid;
+    border-radius: 25px;
+    background-color: rgb(4, 109, 69);
+    color: white;
+    padding: 1rem;
+    flex-wrap: wrap;
+}
+
+.contenedorMain .items{
+    font-weight: bolder;
+    box-shadow: 2px 2px 2px rgb(235, 165, 74);
+    padding: 1rem;
+}
+
+.btn{
+    text-decoration: none;
+    box-shadow: 2px 2px 2px rgb(235, 165, 74);
+    transition: all 0.9s ease;
+    margin: 1rem;   
+}
+
+.btn:hover{
+    background-color: white;
+    cursor: pointer;
+    transform:scale(1.1) ;
+}
+
+.contenedorParrafo{
+    font-family: Overpass;
+    display: flex;
+    width: 100%;
+    justify-content: space-around;
+    align-items: center;
+    gap: 20px;
+}
+
+.contenedorParrafo p{
+    font-family: Overpass;
+    text-align: justify;
+    margin: 50px;
+}
+
+p {
+    font-family: Overpass;
+}
+
+.pie_pagina {
+    width: 100%;
+    background: rgb(4, 109, 69);
+}
+
+.pie_pagina .grupo1 {
+    width: 100%;
+    margin: auto;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 50px;
+    padding: 45px 0px;
+}
+
+.pie_pagina .grupo1 .box figure {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.pie_pagina .grupo1 .box figure img {
+    width: 250px;
+}
+
+.pie_pagina .grupo1 .box h2 {
+    color: white;
+    margin-bottom: 25px;
+    font-size: 20px;
+}
+
+.pie_pagina .grupo1 .box a {
+    color: white;
+    margin: 5px;
+    padding: 5px;
+    font-size: medium;
+    display: block;
+    text-decoration: none;
+}
+
+.pie_pagina .grupo1 .red_social a {
+    display: inline-block;
+    text-decoration: none;
+    width: 50px;
+    height: 50px;
+    line-height: 45px;
+    color: white;
+    margin-right: 10px;
+    background-color: #030d18;
+    text-align: center;
+    transition: all 500ms ease;
+}
+
+.pie_pagina .grupo1 .red_social a:hover {
+    color: rgb(11, 185, 238);
+}
+
+.pie_pagina .grupo2 {
+    background-color: #030d18;
+    padding: 20px 10px;
+    text-align: center;
+    color: #fff;
+    font-size: small;
+    font-weight: bolder;
+}
+
+.contenedorCard {
+    display: flex;
+    flex-flow: wrap;
+    margin: 0 10px; 
+    padding: 10px;
+    gap: 10px;
+    justify-content: space-around;
+    background-color: white;
+}
+
+.descripcionImg {
+    margin: 0px;
+    padding: 2px;
+    gap: 5px;
+}
+
+.card {
+    width: 300px;
+    height: 250px;
+    background-color: rgb(4, 109, 69);
+    color: white;
+    border-radius: 6px;
+}
+
+.contenedorCard .card img {
+    width: 100%;
+    max-height: 200px;
+}
+
+.contenedorCard .card .descripcionCard {
+    text-align: center;
+    font-size: large;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    padding: 3px;
+    border: solid 1px;
+    border-radius: 5px;
+}
+
+.contenedorForm {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    margin-bottom: 20px;
+    margin-top: 20px;
+    font-family: Overpass;
+    border: 10px white solid;
+    border-radius: 25px;
+    background-color: rgb(4, 109, 69);
+    color: white;
+    padding: 1rem;
+}
+
+.contenedorForm h4{
+    margin-left: 50px;
+    padding: 5px;
+}
+
+.contenedorForm .items{
+    margin-left: 20px;
+    padding: 5px;
+    width: 40%;
+    border-radius: 10px;
+    font-weight: bolder;
+    box-shadow: 2px 2px 2px rgb(235, 165, 74);
+}
+
+.FormContacto {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    margin-bottom: 20px;
+    margin-top: 20px;
+    font-family: Overpass;
+    border: 10px white solid;
+    border-radius: 25px;
+    color: white;
+    padding: 1rem;
+}
+
+.FormContacto h4{
+    margin-left: 50px;
+    padding: 5px;
+    color: #030d18;
+}
+
+.FormContacto .items{
+    margin-left: 20px;
+    padding: 5px;
+    width: 40%;
+    border-radius: 10px;
+    font-weight: bolder;
+    box-shadow: 2px 2px 2px rgb(235, 165, 74);
+}
+
+.tituloConsulta{
+    text-align: center;
+    font-size: x-large;
+    font-weight: bolder;
+    font-family: Overpass;
+    margin-top: 10px;
+}
+
+.contenedorFooter{
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+}
+
+.pie_pagina {
+    width: 100%;
+    background: rgb(4, 109, 69);
+}
+
+@media only screen and (max-width: 580px){
+    .contenedorParrafo{
+        flex-wrap: wrap;
+    }   
+}
